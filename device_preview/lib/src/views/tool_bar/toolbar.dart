@@ -163,15 +163,15 @@ class _DevicePreviewToolBarState extends State<DevicePreviewToolBar> {
                     ),
                   ),
                 ),
-                if (canRotate)
-                  ToolBarButton(
-                    title: 'Rotate',
-                    icon: Icons.screen_rotation,
-                    onTap: () {
-                      final state = context.read<DevicePreviewStore>();
-                      state.rotate();
-                    },
-                  ),
+                // if (canRotate)
+                //   ToolBarButton(
+                //     title: 'Rotate',
+                //     icon: Icons.screen_rotation,
+                //     onTap: () {
+                //       final state = context.read<DevicePreviewStore>();
+                //       state.rotate();
+                //     },
+                //   ),
                 Selector(
                   selector: (context, DevicePreviewStore store) =>
                       store.data.isFrameVisible,
